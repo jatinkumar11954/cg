@@ -1,2 +1,2 @@
 # DemoApp
-Demo for All Apps
+Demo App for sample

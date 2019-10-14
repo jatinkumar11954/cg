@@ -1,6 +1,4 @@
-import 'package:demo_app/Arrangements/Drawer.dart';
 import 'package:demo_app/Arrangements/sizeModification.dart';
-import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -14,13 +12,10 @@ class _ContactUsState extends State<ContactUs> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: new Scaffold(
         appBar: new AppBar(
           title: new Text("Contact Us"),
         ),
-        bottomNavigationBar: bottomnavigation(context,1),
-        drawer: theDrawer(context),
         body:WillPopScope(
       onWillPop:()
       {

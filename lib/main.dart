@@ -1,7 +1,6 @@
 import 'package:demo_app/screens/Data/Register.dart';
 import 'package:demo_app/screens/Data/contactForm.dart';
 import 'package:demo_app/screens/bottomNavigation.dart';
-import 'package:demo_app/screens/test.dart';
 import 'package:flutter/material.dart';
 import './screens/homescreen.dart';
 import './Screens/isConnection.dart';
@@ -35,10 +34,9 @@ class myapp extends StatelessWidget
      'ScreenSelection':(BuildContext context) => new SelectScreen(),
      'Register':(BuildContext context) => new Register(),
      'ContactForm':(BuildContext context) => new ContactForm(),
-    //  'BottomNavigation':(BuildContext context) => new BottomNavigation(),
+     'BottomNavigation':(BuildContext context) => new BottomNavigation(),
      'SignIn':(BuildContext context) => new SignIn(),
      'ContactUs':(BuildContext context) => new ContactUs(),
-    //  'Test':(BuildContext context) => new Test(),
       
     },
   );

@@ -1,5 +1,3 @@
-import 'package:demo_app/Arrangements/Drawer.dart';
-import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:flutter/widgets.dart';
 import "package:flutter/material.dart";
 import 'package:demo_app/Arrangements/sizeModification.dart';
@@ -29,8 +27,6 @@ class _ContactFormState extends State<ContactForm> {
                     title: Text("Contact Form"),
                     backgroundColor: Colors.green,
                   ),
-                  drawer: theDrawer(context),
-                  bottomNavigationBar: bottomnavigation(context,1),
                   body:WillPopScope(
                   onWillPop:()
                   {

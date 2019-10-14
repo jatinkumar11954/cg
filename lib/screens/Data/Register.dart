@@ -1,6 +1,4 @@
-import 'package:demo_app/Arrangements/Drawer.dart';
 import 'package:demo_app/Arrangements/sizeModification.dart';
-import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:flutter/widgets.dart';
 import "package:flutter/material.dart";
 import 'package:flutter/src/widgets/navigator.dart';
@@ -56,8 +54,6 @@ class _RegisterState extends State<Register> {
                     title: Text("Register Form"),
                     backgroundColor: Colors.orangeAccent,
                   ),
-                  drawer: theDrawer(context),
-                  bottomNavigationBar: bottomnavigation(context,0),
                   body:WillPopScope(
                   onWillPop:()
                   {

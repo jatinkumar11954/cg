@@ -1,6 +1,4 @@
 import 'dart:io';
-import 'package:demo_app/Arrangements/Drawer.dart';
-import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/material.dart';
 import './showImage.dart';
@@ -56,8 +54,6 @@ class _HomeScreenState extends State<HomeScreen>
         backgroundColor: Color(0XFF00099a9),
         title: new Text('CONVERSIONGURU DEMO APP'),
       ),
-      drawer: theDrawer(context),
-      bottomNavigationBar: bottomnavigation(context,0),
       body:WillPopScope(
       onWillPop:()
       {
@@ -144,10 +140,10 @@ class _HomeScreenState extends State<HomeScreen>
              padding: EdgeInsets.only(left: SizeConfig.blockSizeVertical*2.5,right:SizeConfig.blockSizeVertical*1.5 ),
          child: RaisedButton(
               color: Colors.blue,
-            child: Text("Test"),
+            child: Text("BottomNavigation"),
             onPressed: ()
             {
-              Navigator.pushNamed(context,'Test');
+              Navigator.pushNamed(context,'BottomNavigation');
 
             },
           ),

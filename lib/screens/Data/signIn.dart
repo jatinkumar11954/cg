@@ -1,4 +1,6 @@
+import 'package:demo_app/Arrangements/Drawer.dart';
 import 'package:demo_app/Arrangements/sizeModification.dart';
+import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -56,6 +58,8 @@ class _SignInState extends State<SignIn> {
                     title: Text("Sign In"),
                     backgroundColor: Colors.orangeAccent,
                   ),
+                  drawer: theDrawer(context),
+                  bottomNavigationBar: bottomnavigation(context,0),
                   body:WillPopScope(
                   onWillPop:()
                   {

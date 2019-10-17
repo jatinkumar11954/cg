@@ -1,33 +1,54 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
-class BottomNavigation extends StatefulWidget
-{
-  @override
-  _BottomNavigationState createState() => _BottomNavigationState();
-}
+Widget bottomnavigation(BuildContext context,int index) {
 
-class _BottomNavigationState extends State<BottomNavigation> {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(bottomNavigationBar: BottomNavigationBar(
-      items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home'),),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.contacts), title: Text('Contact us')),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart), title: Text('Cart')),
-        ],
-        fixedColor: Colors.deepPurple,
-        // onTap: onItemTapped(),
-            ),);
-          }
-        
-          // onItemTapped() {
-          //   Navigator.pushNamed(context,'HomeScreen');
-          //   setState(() {
-          //     Null;
-          //   });
-          // }
+ 
+      return BottomNavigationBar(
+        onTap:(index)
+           {
+             switch(index)
+             {
+               case 0:
+               {
+                 Navigator.pushNamed(context, 'HomeScreen');
+                 break;
+               }
+               case 1:
+               {
+                 Navigator.pushNamed(context, 'ContactUs');
+                 break;
+               }
+               
+               case 2:
+               {
+                 Navigator.pushNamed(context, 'Cart');
+                 break;
+               }
+   
+             }
+   
+   
+           },
+   
+         type: BottomNavigationBarType.fixed,
+         currentIndex: index,
+         items: 
+        //  <BottomNavigationBarItem>
+         [
+             BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home'),),
+             BottomNavigationBarItem(
+                 icon: Icon(Icons.contacts), title: Text('Contact us')),
+             BottomNavigationBarItem(
+                 icon: Icon(Icons.shopping_cart), title: Text('Cart')),
+           ],
+           fixedColor: Colors.orange,
+          
+                  
+               );
+               
+             
+           
+         
+
 }

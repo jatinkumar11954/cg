@@ -1,6 +1,7 @@
 import 'package:demo_app/screens/Data/Register.dart';
 import 'package:demo_app/screens/Data/contactForm.dart';
 import 'package:demo_app/screens/bottomNavigation.dart';
+import 'package:demo_app/screens/cart.dart';
 import 'package:demo_app/screens/test.dart';
 import 'package:flutter/material.dart';
 import './screens/homescreen.dart';
@@ -9,6 +10,7 @@ import './screens/Data/CheckingData.dart';
 import './screens/selectScreen.dart';
 import './screens/Data/signIn.dart';
 import './screens/contactUs.dart';
+
 // import 'package:firebase_database/ui/firebase_animated_list.dart';
 // import 'package:firebase_database/firebase_database.dart';
 // import 'package:firebase_core/firebase_core.dart';
@@ -39,7 +41,7 @@ class myapp extends StatelessWidget
      'SignIn':(BuildContext context) => new SignIn(),
      'ContactUs':(BuildContext context) => new ContactUs(),
     //  'Test':(BuildContext context) => new Test(),
-      
+       'Cart':(BuildContext context) => new Cart(),
     },
   );
   }

@@ -10,12 +10,17 @@ import './screens/Data/CheckingData.dart';
 import './screens/selectScreen.dart';
 import './screens/Data/signIn.dart';
 import './screens/contactUs.dart';
+import 'package:flutter/services.dart';
 
 // import 'package:firebase_database/ui/firebase_animated_list.dart';
 // import 'package:firebase_database/firebase_database.dart';
 // import 'package:firebase_core/firebase_core.dart';
 
 void main() {
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitUp,]
+    );
   // runApp(new myapp());
   runApp(new myapp());
 }

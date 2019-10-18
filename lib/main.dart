@@ -40,7 +40,7 @@ class myapp extends StatelessWidget
     //  'BottomNavigation':(BuildContext context) => new BottomNavigation(),
      'SignIn':(BuildContext context) => new SignIn(),
      'ContactUs':(BuildContext context) => new ContactUs(),
-    //  'Test':(BuildContext context) => new Test(),
+     'Test':(BuildContext context) => new Test(),
        'Cart':(BuildContext context) => new Cart(),
     },
   );

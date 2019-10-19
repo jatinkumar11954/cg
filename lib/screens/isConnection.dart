@@ -38,7 +38,7 @@ class _IsConnection extends State<IsConnection> {
   @override
   Widget build(BuildContext context)
   {
-    if (_source.keys.toList()[0] == ConnectivityResult.none)
+    if (_source.keys.toList()[0] != ConnectivityResult.none)
      {
       print("noooo");
       return new MaterialApp(
@@ -77,7 +77,7 @@ class _IsConnection extends State<IsConnection> {
     else{
         return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: new HomeScreen(),
+        home: new SelectScreen(),
         routes: <String, WidgetBuilder>{
           'splash': (BuildContext context) => new Splash(),
          'HomeScreen': (BuildContext context) => new HomeScreen(),

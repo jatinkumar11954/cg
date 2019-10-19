@@ -8,6 +8,7 @@ import 'package:demo_app/screens/privacy.dart';
 import 'package:demo_app/screens/splashScreen.dart';
 import 'package:demo_app/screens/test.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import './screens/homescreen.dart';
 import './Screens/isConnection.dart';
 import './screens/Data/CheckingData.dart';
@@ -20,7 +21,10 @@ import './screens/splashScreen.dart';
 // import 'package:firebase_database/firebase_database.dart';
 // import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() { SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitUp,]
+    );
   // runApp(new myapp());
   runApp(new myapp());
 }

@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:splashscreen/splashscreen.dart';
 import '../Arrangements/sizeModification.dart';
 import './selectScreen.dart';
+import 'isConnection.dart';
 class Splash extends StatefulWidget {
   @override
   _SplashState createState() => new _SplashState();
@@ -38,7 +39,7 @@ class _SplashState extends State<Splash> {
                 photoSize:  SizeConfig.blockSizeVertical*30.0,
                 title: Text("Welcome to ConversionGuru",style:TextStyle(fontSize: SizeConfig.blockSizeVertical *3.0,color:Colors.deepOrange),),
                 loaderColor: Colors.green,
-                navigateAfterSeconds: new SelectScreen(),
+                navigateAfterSeconds: new IsConnection(),
               ),
           new Column(
             mainAxisAlignment: MainAxisAlignment.end,

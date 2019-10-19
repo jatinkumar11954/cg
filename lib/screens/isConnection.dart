@@ -1,12 +1,11 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:connectivity/connectivity.dart';
-import 'package:demo_app/Arrangements/sizeModification.dart';
+// import 'package:demo_app/Arrangements/sizeModification.dart';
 import 'package:demo_app/Screens/contactUS.dart';
 import 'package:demo_app/screens/Data/Account.dart';
 import 'package:demo_app/screens/Data/contactForm.dart';
 import 'package:demo_app/screens/Data/signIn.dart';
-import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:demo_app/screens/cart.dart';
 import 'package:demo_app/screens/help.dart';
 import 'package:demo_app/screens/privacy.dart';
@@ -79,22 +78,23 @@ class _IsConnection extends State<IsConnection> {
     else{
         return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: new Splash(),
-        routes: <String, WidgetBuilder>{
-         'HomeScreen': (BuildContext context) => new HomeScreen(),
-        'CheckData': (BuildContext context) => new CheckData(),
-        'ScreenSelection':(BuildContext context) => new SelectScreen(),
-        'Register':(BuildContext context) => new Register(),
-        'ContactForm':(BuildContext context) => new ContactForm(),
-        // 'BottomNavigation':(BuildContext context) => new BottomNavigation(),
-        'SignIn':(BuildContext context) => new SignIn(),
-        'ContactUs':(BuildContext context) => new ContactUs(),
-        'Test':(BuildContext context) => new Test(),
-        'Cart':(BuildContext context) => new Cart(),
-        'AccountInfo':(BuildContext context) => new AccountInfo(),
-        'Help':(BuildContext context) => new Help(),
-        'Privacy':(BuildContext context) => new Privacy(),
-    },
+        home: new HomeScreen(),
+    //     routes: <String, WidgetBuilder>{
+    //       'splash': (BuildContext context) => new Splash(),
+    //      'HomeScreen': (BuildContext context) => new HomeScreen(),
+    //     'CheckData': (BuildContext context) => new CheckData(),
+    //     'ScreenSelection':(BuildContext context) => new SelectScreen(),
+    //     'Register':(BuildContext context) => new Register(),
+    //     'ContactForm':(BuildContext context) => new ContactForm(),
+    //     // 'BottomNavigation':(BuildContext context) => new BottomNavigation(),
+    //     'SignIn':(BuildContext context) => new SignIn(),
+    //     'ContactUs':(BuildContext context) => new ContactUs(),
+    //     'Test':(BuildContext context) => new Test(),
+    //     'Cart':(BuildContext context) => new Cart(),
+    //     'AccountInfo':(BuildContext context) => new AccountInfo(),
+    //     'Help':(BuildContext context) => new Help(),
+    //     'Privacy':(BuildContext context) => new Privacy(),
+    // },
   );
     }
     

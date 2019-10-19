@@ -1,7 +1,11 @@
+import 'package:demo_app/screens/Data/Account.dart';
 import 'package:demo_app/screens/Data/Register.dart';
 import 'package:demo_app/screens/Data/contactForm.dart';
 import 'package:demo_app/screens/bottomNavigation.dart';
 import 'package:demo_app/screens/cart.dart';
+import 'package:demo_app/screens/help.dart';
+import 'package:demo_app/screens/privacy.dart';
+import 'package:demo_app/screens/splashScreen.dart';
 import 'package:demo_app/screens/test.dart';
 import 'package:flutter/material.dart';
 import './screens/homescreen.dart';
@@ -10,6 +14,7 @@ import './screens/Data/CheckingData.dart';
 import './screens/selectScreen.dart';
 import './screens/Data/signIn.dart';
 import './screens/contactUs.dart';
+import './screens/splashScreen.dart';
 
 // import 'package:firebase_database/ui/firebase_animated_list.dart';
 // import 'package:firebase_database/firebase_database.dart';
@@ -26,7 +31,7 @@ class myapp extends StatelessWidget
   Widget build(BuildContext context) {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: new IsConnection(),
+    home: new Splash(),
     theme: ThemeData(
       primaryColor: Colors.indigo,
       backgroundColor: Colors.grey,
@@ -41,7 +46,10 @@ class myapp extends StatelessWidget
      'SignIn':(BuildContext context) => new SignIn(),
      'ContactUs':(BuildContext context) => new ContactUs(),
     //  'Test':(BuildContext context) => new Test(),
-       'Cart':(BuildContext context) => new Cart(),
+       'Cart':(BuildContext context) => new Cart(), 
+       'AccountInfo':(BuildContext context) => new AccountInfo(),
+        'Help':(BuildContext context) => new Help(),
+        'Privacy':(BuildContext context) => new Privacy(),
     },
   );
   }

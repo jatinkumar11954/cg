@@ -1,10 +1,22 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:connectivity/connectivity.dart';
+import 'package:demo_app/screens/privacy.dart';
+import 'package:demo_app/screens/selectScreen.dart';
+import 'package:demo_app/screens/splashScreen.dart';
+import 'package:demo_app/screens/test.dart';
 // import 'package:demo_app/Arrangements/sizeModification.dart';
 import 'package:flutter/material.dart';
 import './homescreen.dart';
 import './imageNoNet.dart';
+import 'Data/Account.dart';
+import 'Data/CheckingData.dart';
+import 'Data/Register.dart';
+import 'Data/contactForm.dart';
+import 'Data/signIn.dart';
+import 'cart.dart';
+import 'contactUs.dart';
+import 'help.dart';
 class IsConnection extends StatefulWidget {
   @override
   _IsConnection createState() => _IsConnection();
@@ -66,22 +78,22 @@ class _IsConnection extends State<IsConnection> {
         return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: new HomeScreen(),
-    //     routes: <String, WidgetBuilder>{
-    //       'splash': (BuildContext context) => new Splash(),
-    //      'HomeScreen': (BuildContext context) => new HomeScreen(),
-    //     'CheckData': (BuildContext context) => new CheckData(),
-    //     'ScreenSelection':(BuildContext context) => new SelectScreen(),
-    //     'Register':(BuildContext context) => new Register(),
-    //     'ContactForm':(BuildContext context) => new ContactForm(),
-    //     // 'BottomNavigation':(BuildContext context) => new BottomNavigation(),
-    //     'SignIn':(BuildContext context) => new SignIn(),
-    //     'ContactUs':(BuildContext context) => new ContactUs(),
-    //     'Test':(BuildContext context) => new Test(),
-    //     'Cart':(BuildContext context) => new Cart(),
-    //     'AccountInfo':(BuildContext context) => new AccountInfo(),
-    //     'Help':(BuildContext context) => new Help(),
-    //     'Privacy':(BuildContext context) => new Privacy(),
-    // },
+        routes: <String, WidgetBuilder>{
+          'splash': (BuildContext context) => new Splash(),
+         'HomeScreen': (BuildContext context) => new HomeScreen(),
+        'CheckData': (BuildContext context) => new CheckData(),
+        'ScreenSelection':(BuildContext context) => new SelectScreen(),
+        'Register':(BuildContext context) => new Register(),
+        'ContactForm':(BuildContext context) => new ContactForm(),
+        // 'BottomNavigation':(BuildContext context) => new BottomNavigation(),
+        'SignIn':(BuildContext context) => new SignIn(),
+        'ContactUs':(BuildContext context) => new ContactUs(),
+        'Test':(BuildContext context) => new Test(),
+        'Cart':(BuildContext context) => new Cart(),
+        'AccountInfo':(BuildContext context) => new AccountInfo(),
+        'Help':(BuildContext context) => new Help(),
+        'Privacy':(BuildContext context) => new Privacy(),
+    },
   );
     }
     

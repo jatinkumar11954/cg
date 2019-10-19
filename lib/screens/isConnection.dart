@@ -2,22 +2,9 @@ import 'dart:async';
 import 'dart:io';
 import 'package:connectivity/connectivity.dart';
 // import 'package:demo_app/Arrangements/sizeModification.dart';
-import 'package:demo_app/Screens/contactUS.dart';
-import 'package:demo_app/screens/Data/Account.dart';
-import 'package:demo_app/screens/Data/contactForm.dart';
-import 'package:demo_app/screens/Data/signIn.dart';
-import 'package:demo_app/screens/cart.dart';
-import 'package:demo_app/screens/help.dart';
-import 'package:demo_app/screens/privacy.dart';
-import 'package:demo_app/screens/showImage.dart';
-import 'package:demo_app/screens/test.dart';
-import './Data/CheckingData.dart';
-import './splashScreen.dart';
 import 'package:flutter/material.dart';
 import './homescreen.dart';
 import './imageNoNet.dart';
-import './selectScreen.dart';
-import './Data/Register.dart';
 class IsConnection extends StatefulWidget {
   @override
   _IsConnection createState() => _IsConnection();

@@ -7,6 +7,7 @@ import 'package:demo_app/screens/splashScreen.dart';
 import 'package:demo_app/screens/test.dart';
 // import 'package:demo_app/Arrangements/sizeModification.dart';
 import 'package:flutter/material.dart';
+import 'package:system_setting/system_setting.dart';
 import './homescreen.dart';
 import './imageNoNet.dart';
 import 'Data/Account.dart';
@@ -17,6 +18,7 @@ import 'Data/signIn.dart';
 import 'cart.dart';
 import 'contactUs.dart';
 import 'help.dart';
+
 class IsConnection extends StatefulWidget {
   @override
   _IsConnection createState() => _IsConnection();
@@ -38,10 +40,10 @@ class _IsConnection extends State<IsConnection> {
   @override
   Widget build(BuildContext context)
   {
-    if (_source.keys.toList()[0] != ConnectivityResult.none)
-     {
-      print("noooo");
-      return new MaterialApp(
+    // if (_source.keys.toList()[0] != ConnectivityResult.none)
+    //  {
+    //   print("noooo");
+    return new MaterialApp(
       debugShowCheckedModeBanner: false,
       home:Scaffold(
         appBar: new AppBar(
@@ -65,6 +67,13 @@ class _IsConnection extends State<IsConnection> {
                IsConnection();
              },
                  ),
+                 RaisedButton(
+             child: Text("Go to Settings"),
+             color: Colors.green,
+             onPressed: ()
+             {SystemSetting.goto(SettingTarget.WIFI);
+             },
+                 ),  
               ]
               )
               ),
@@ -73,7 +82,7 @@ class _IsConnection extends State<IsConnection> {
 );
 
      
-     }
+     
     else{
         return MaterialApp(
         debugShowCheckedModeBanner: false,

@@ -12,7 +12,7 @@ The escape Sequence is "/"<br>
   launch("tel:/+919010590693"),<br>
   we can add the character<br>
      <br><br>
-     <h3>Other Important change<h3><br>
+     <h3>Other Important change</h3><br>
      some apps are desgned for portrait mode <br>
      when they are rotated to landscape mode the screen padding changes and app will look ugly with error of pixels<br>
      so by using this cod ein the main method of the main.dart file we can eradicate that error<br>

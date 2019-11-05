@@ -40,9 +40,9 @@ class _IsConnection extends State<IsConnection> {
   @override
   Widget build(BuildContext context)
   {
-    // if (_source.keys.toList()[0] != ConnectivityResult.none)
-    //  {
-    //   print("noooo");
+     if (_source.keys.toList()[0] == ConnectivityResult.none)
+     {
+       print("noooo");
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
       home:Scaffold(
@@ -71,7 +71,7 @@ class _IsConnection extends State<IsConnection> {
              child: Text("Go to Settings"),
              color: Colors.green,
              onPressed: ()
-             {SystemSetting.goto(SettingTarget.WIFI);
+             {SystemSetting.goto(SettingTarget.Mobilenetwork);
              },
                  ),  
               ]
@@ -81,7 +81,7 @@ class _IsConnection extends State<IsConnection> {
               ),
 );
 
-     
+     }
      
     else{
         return MaterialApp(

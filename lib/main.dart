@@ -29,6 +29,11 @@ void main() { SystemChrome.setPreferredOrientations([
   runApp(new app());
 }
 
+
+
+
+
+
 class app extends StatelessWidget
 {
   @override
@@ -37,6 +42,7 @@ class app extends StatelessWidget
     debugShowCheckedModeBanner: false,
     home: new Splash(),
     theme: ThemeData(
+    
       primaryColor: Colors.indigo,
       backgroundColor: Colors.grey,
     ),

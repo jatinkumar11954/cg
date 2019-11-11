@@ -4,6 +4,8 @@ import 'package:splashscreen/splashscreen.dart';
 import '../Arrangements/sizeModification.dart';
 import './selectScreen.dart';
 import 'isConnection.dart';
+     
+
 class Splash extends StatefulWidget {
   @override
   _SplashState createState() => new _SplashState();
@@ -47,7 +49,7 @@ class _SplashState extends State<Splash> {
             children: <Widget>[
               Text('Powered By ConversionGuru', style: TextStyle(decorationColor:Colors.green,fontSize: SizeConfig.blockSizeVertical * 2.5,backgroundColor:Colors.white)),
               Padding(
-                padding: EdgeInsets.only(bottom: 30.0),
+                padding: EdgeInsets.only(bottom: SizeConfig.blockSizeVertical *30.0),
                 // child: new Image.asset(
                 //   'assets/dff.png',
                 //   height: 40.0,
